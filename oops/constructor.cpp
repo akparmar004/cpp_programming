@@ -2,18 +2,27 @@
 using namespace std;
 class a
 {
-	public :
-		int cash;
-		
-		void get_data()
-		{
-			cout << "cash : " << cash << endl;
-		}
-	
+	int cash;
+	public :		
+		a();
+		void get_data();
 };
+		
+a::a()
+{
+	cout << "in class a." << endl;
+	cash = 100;
+}
+
+void a::get_data()
+{
+	cout << "cash : " << cash << endl;
+}
+	
+
 
 int main()
 {
-	a a1 = {100};
+	a a1;
 	a1.get_data();
 }
