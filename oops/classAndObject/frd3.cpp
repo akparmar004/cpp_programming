@@ -3,9 +3,11 @@ using namespace std;
 class son;
 class father
 {
+	//data members..
 	char name[20];
 	float sal;
 	
+	//member function..
 	public :
 		void set_data()
 		{
@@ -22,9 +24,11 @@ class father
 
 class son
 {
+	//data members..
 	char name[20];
 	float sal;
 	
+	//member function..
 	public :
 		void set_data()
 		{
@@ -39,6 +43,7 @@ class son
 	friend void income_tax(father, son);
 };
 
+//non member function..
 void income_tax(father f, son s)
 {
 	float total;
