@@ -8,6 +8,7 @@ class a
 	public :
 		a();
 		a(int);
+		a(a&);
 		void get_data();
 };
 //member variable initialization
@@ -20,6 +21,11 @@ a::a(int b)
 	cout << "parameterized cons." << endl;
 	cash = b;
 }
+a::a(a &obj)
+{
+	cout << "copy constructor.." << endl;
+	cash = obj.cash;
+}
 
 void a::get_data()
 {
@@ -28,8 +34,11 @@ void a::get_data()
 
 int main()
 {
-	a a1,a2(200),a3(a2);
+	a a1,a2(200),a3(a1),a4 = a1,a5;
+	a5 = a2;
 	a1.get_data();
 	a2.get_data();
 	a3.get_data();
+	a4.get_data();
+	a5.get_data();
 }
