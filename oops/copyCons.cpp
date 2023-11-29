@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
 
-//constructor overloading 
-//constructor with same name and having different numbers of arguments..
 class a
 {
 	int cash;
@@ -30,7 +28,8 @@ void a::get_data()
 
 int main()
 {
-	a a1,a2(200);
+	a a1,a2(200),a3(a2);
 	a1.get_data();
 	a2.get_data();
+	a3.get_data();
 }
