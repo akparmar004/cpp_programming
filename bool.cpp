@@ -2,11 +2,10 @@
 
 int main()
 {
-	bool bFalse = 0; // okay: initialized to false
-	bool bTrue = 1; // okay: initialized to true
-	bool bNo {2}; // error: narrowing conversions disallowed
+	bool bFalse = false; // okay: initialized to false
+	bool bTrue = true; // okay: initialized to true
 
-	std::cout << bFalse << '\n' << bTrue<< '\n' << bNo << '\n';
+	std::cout << bFalse << '\n' << bTrue<< '\n';
 
 	return 0;
 }
