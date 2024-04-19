@@ -1,11 +1,9 @@
-#include <cstdio>
 #include<iostream>
-using namespace std;
 
+using namespace std;
 int main()
 {
-  int x;
-  printf("enter x : ");
-  scanf("%d",&x);
-  printf("x = %d\n",x);
+	int a{5};
+
+	return 0;
 }
